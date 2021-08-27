@@ -2,7 +2,7 @@ import requests
 from datetime import datetime, timedelta
 
 def min_temp_diff():
-    url = "https://api.openweathermap.org/data/2.5/onecall?lat=56.55&lon=59.57&exclude=minutely,hourly&appid=5ae70ef221c65951fca7506e4d536d87"
+    url = "https://api.openweathermap.org/data/2.5/onecall?lat=56.55&lon=59.57&exclude=minutely,hourly&appid=*"
     response = requests.get(url)
     min_temp = 0
     date = ""
@@ -21,7 +21,7 @@ def min_temp_diff():
 
 
 def max_length_of_sun():
-    url = "https://api.openweathermap.org/data/2.5/onecall?lat=56.55&lon=59.57&exclude=minutely,hourly&appid=5ae70ef221c65951fca7506e4d536d87"
+    url = "https://api.openweathermap.org/data/2.5/onecall?lat=56.55&lon=59.57&exclude=minutely,hourly&appid=*"
     response = requests.get(url)
     max_diff = 0
     date = ""
